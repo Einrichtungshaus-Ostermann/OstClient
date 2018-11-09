@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+
+
+        <element type="button">
+            <name>defaultButton</name>
+            <label><![CDATA[<b>Allgemeine Einstellungen</b>]]></label>
+        </element>
+
+
+        <element type="boolean">
+            <name>live</name>
+            <label>Live</label>
+            <value>true</value>
+            <description>Ist das Plugin live im inhouse?</description>
+        </element>
+
+
+
+
+        <element type="button">
+            <name>globalSettingsButton</name>
+            <label><![CDATA[<b>Globale Einstellungen</b>]]></label>
+        </element>
+
+        <element type="select">
+            <name>company</name>
+            <label>Firma</label>
+            <value>1</value>
+            <description>Welche Firma?</description>
+            <store>
+                <option>
+                    <value>1</value>
+                    <label>Ostermann</label>
+                </option>
+                <option>
+                    <value>3</value>
+                    <label>Trends</label>
+                </option>
+            </store>
+        </element>
+
+
+
+
+
+        <element type="button">
+            <name>testSettingsButton</name>
+            <label><![CDATA[<b>Test Einstellungen</b>]]></label>
+        </element>
+
+
+        <element type="boolean">
+            <name>isRegistered</name>
+            <label>Registriert</label>
+            <value>true</value>
+            <description>Ist der aktuelle Client registriert im intranet?</description>
+        </element>
+
+
+
+        <element type="text">
+            <name>city</name>
+            <label>Stadt</label>
+            <value>Witten</value>
+            <description>Die Stadt des aktuellen Clients.</description>
+        </element>
+
+
+
+        <element type="text">
+            <name>homeUrl</name>
+            <label>Startseite</label>
+            <value>http://intranet.ostermann.de</value>
+            <description>Die Startseite des aktuellen Clients?</description>
+        </element>
+
+
+
+
+    </elements>
+
+</config>
