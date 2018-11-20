@@ -16,10 +16,6 @@ interface ClientServiceInterface
 {
     /**
      * ...
-     *
      */
     public function isRegistered(): bool;
-
-
-
 }

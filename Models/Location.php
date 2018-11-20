@@ -12,20 +12,15 @@
 
 namespace OstClient\Models;
 
+use Doctrine\ORM\Mapping as ORM;
 use Shopware\Components\Model\ModelEntity;
-use Doctrine\ORM\Mapping AS ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
-
 
 /**
  * @ORM\Entity(repositoryClass="Repository")
  * @ORM\Table(name="ost_client_locations")
  */
-
 class Location extends ModelEntity
 {
-
     /**
      * Auto-generated id.
      *
@@ -35,11 +30,7 @@ class Location extends ModelEntity
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-
     private $id;
-
-
-
 
     /**
      * ...
@@ -48,10 +39,7 @@ class Location extends ModelEntity
      *
      * @ORM\Column(name="ipRange", type="string", nullable=false, length=128)
      */
-
     private $ipRange;
-
-
 
     /**
      * ...
@@ -60,10 +48,7 @@ class Location extends ModelEntity
      *
      * @ORM\Column(name="city", type="string", nullable=false, length=128)
      */
-
     private $city;
-
-
 
     /**
      * Getter method for the property.
@@ -74,8 +59,6 @@ class Location extends ModelEntity
     {
         return $this->id;
     }
-
-
 
     /**
      * Setter method for the property.
@@ -89,8 +72,6 @@ class Location extends ModelEntity
         $this->id = $id;
     }
 
-
-
     /**
      * Getter method for the property.
      *
@@ -100,8 +81,6 @@ class Location extends ModelEntity
     {
         return $this->ipRange;
     }
-
-
 
     /**
      * Setter method for the property.
@@ -115,8 +94,6 @@ class Location extends ModelEntity
         $this->ipRange = $ipRange;
     }
 
-
-
     /**
      * Getter method for the property.
      *
@@ -126,8 +103,6 @@ class Location extends ModelEntity
     {
         return $this->city;
     }
-
-
 
     /**
      * Setter method for the property.
@@ -140,10 +115,4 @@ class Location extends ModelEntity
     {
         $this->city = $city;
     }
-
-
-
-
-
-
 }

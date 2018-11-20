@@ -3,18 +3,15 @@
            xmlns="http://symfony.com/schema/dic/services"
            xsi:schemaLocation="http://symfony.com/schema/dic/services
         http://symfony.com/schema/dic/services/services-1.0.xsd">
-
     <services>
 
-
+        <!-- configuration -->
         <service id="ost_client.configuration" class="Shopware\Components\Plugin\CachedConfigReader">
             <factory service="shopware.plugin.cached_config_reader" method="getByPluginName"/>
             <argument type="string">OstClient</argument>
         </service>
 
-
-
-
+        <!-- services -->
         <service id="ost_client.client_service" class="OstClient\Services\ClientService">
             <argument type="service" id="ost_client.configuration"/>
         </service>
@@ -22,10 +19,6 @@
         <service id="ost_client.location_service" class="OstClient\Services\LocationService">
             <argument type="service" id="ost_client.configuration"/>
         </service>
-
-
-
-
 
     </services>
 </container>

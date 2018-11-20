@@ -21,16 +21,12 @@ interface LocationServiceInterface
      */
     public function getCity(): string;
 
-
-
     /**
      * ...
      *
      * @return string
      */
     public function getHomeUrl(): string;
-
-
 
     /**
      * ...
