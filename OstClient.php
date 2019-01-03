@@ -8,6 +8,10 @@
  * 1.0.0
  * - initial release
  *
+ * 1.0.1
+ * - added getRedirectHomeUrl() to location service which can be used
+ *   as home url
+ *
  * @package   OstClient
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

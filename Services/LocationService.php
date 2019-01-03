@@ -90,6 +90,26 @@ class LocationService implements LocationServiceInterface
      *
      * @return string
      */
+    public function getRedirectHomeUrl(): string
+    {
+        if ($this->configuration['live'] === false) {
+            return $this->configuration['homeUrl'];
+        }
+
+        $foundationConfiguration = Shopware()->Container()->get('ost_foundation.configuration');
+
+        $url = 'http://intranet-apswit11/verkaufsassistent/forceredirect/';
+
+        $url .= ($foundationConfiguration['company'] === 1) ? 'ostermann' : 'trends';
+
+        return $url;
+    }
+
+    /**
+     * ...
+     *
+     * @return string
+     */
     public function getStoreKey(): string
     {
         $foundationConfiguration = Shopware()->Container()->get('ost_foundation.configuration');
