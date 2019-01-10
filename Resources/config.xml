@@ -46,7 +46,7 @@
             <name>isRegistered</name>
             <label>Registriert</label>
             <value>true</value>
-            <description>Ist der aktuelle Client registriert im intranet?</description>
+            <description>Ist der aktuelle Client im Intranet registriert?</description>
         </element>
 
         <element type="text">

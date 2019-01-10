@@ -3,7 +3,7 @@
 /**
  * Einrichtungshaus Ostermann GmbH & Co. KG - Client
  *
- * Client
+ * Defines a live or a test context for the current end-user and its machine.
  *
  * 1.0.0
  * - initial release
@@ -11,6 +11,9 @@
  * 1.0.1
  * - added getRedirectHomeUrl() to location service which can be used
  *   as home url
+ *
+ * 1.0.2
+ * - fixed plugin name
  *
  * @package   OstClient
  *
