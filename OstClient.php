@@ -15,6 +15,9 @@
  * 1.0.2
  * - fixed plugin name
  *
+ * 1.0.3
+ * - removed whitespace
+ *
  * @package   OstClient
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
